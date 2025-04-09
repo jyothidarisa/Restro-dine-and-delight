@@ -1,0 +1,275 @@
+:root {
+    --hope-green: gold;
+
+    --hope-light: brown;
+    --compassion-orange: #E67E22;
+    --dark-blue: #2C3E50;
+    --light-bg: #F9F9F9;
+    --pure-white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light-bg);
+    color: var(--dark-blue);
+    line-height: 1.6;
+}
+
+.header {
+    background: linear-gradient(135deg, var(--hope-green), var(--hope-light));
+    color: var(--pure-white);
+    text-align: center;
+    padding: 60px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.heart-icon {
+    position: absolute;
+    font-size: 1.5rem;
+    animation: float 4s ease-in-out infinite;
+    opacity: 0.7;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.quote-section {
+    background: var(--pure-white);
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 40px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border-left: 5px solid var(--compassion-orange);
+    transition: transform 0.3s ease;
+}
+
+.quote-section:hover {
+    transform: translateY(-5px);
+}
+
+.quote {
+    font-size: 1.4rem;
+    font-style: italic;
+    color: var(--dark-blue);
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.quote:before {
+    content: '"';
+    font-size: 3rem;
+    color: var(--hope-light);
+    position: absolute;
+    left: -20px;
+    top: -15px;
+    opacity: 0.3;
+}
+
+.author {
+    font-weight: 600;
+    color: var(--compassion-orange);
+    text-align: right;
+}
+
+.donation-box {
+    background: var(--pure-white);
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    margin-bottom: 40px;
+}
+
+.donation-box h2 {
+    color: var(--hope-green);
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.amount-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.amount-option {
+    background: var(--pure-white);
+    border: 2px solid var(--hope-light);
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.amount-option:hover, .amount-option.selected {
+    background: var(--hope-green);
+    color: var(--pure-white);
+    border-color: var(--hope-green);
+    transform: translateY(-3px);
+}
+
+.custom-amount {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid var(--hope-light);
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.donate-btn {
+    width: 100%;
+    padding: 15px;
+    background: var(--compassion-orange);
+    color: var(--pure-white);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.donate-btn:hover {
+    background: #D35400;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(230, 126, 34, 0.3);
+}
+
+.impact-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.impact-card {
+    background: var(--pure-white);
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.impact-card:hover {
+    transform: translateY(-5px);
+}
+
+.impact-card h3 {
+    color: var(--hope-green);
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.impact-card i {
+    color: var(--compassion-orange);
+    font-size: 1.5rem;
+}
+
+.progress-container {
+    background: var(--pure-white);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.progress-bar {
+    height: 20px;
+    background: #ECF0F1;
+    border-radius: 10px;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background: linear-gradient(90deg, var(--hope-green), var(--hope-light));
+    width: 65%;
+    border-radius: 10px;
+    transition: width 1s ease;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 15px;
+}
+
+.stat {
+    text-align: center;
+    min-width: 100px;
+}
+
+.stat h3 {
+    color: var(--hope-green);
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.stat p {
+    color: var(--dark-blue);
+    opacity: 0.8;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: var(--dark-blue);
+    color: var(--pure-white);
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+    
+    .quote {
+        font-size: 1.2rem;
+    }
+}
+.hm{
+    font-size: large;
+    background: rgb(70, 70, 180);
+    color: #D35400;
+    text-align: center;
+}

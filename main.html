@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="logo.webp">
+    <script src="j.js" defer></script>
+    <style>
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Animation keyframes */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Initial state for menu items */
+        .menu-items li {
+            opacity: 0; /* Initially hidden */
+            animation: fadeIn 0.5s forwards; /* Animation applied */
+        }
+        .menu-items li:nth-child(1) { animation-delay: 0.1s; }
+        .menu-items li:nth-child(2) { animation-delay: 0.2s; }
+        .menu-items li:nth-child(3) { animation-delay: 0.3s; }
+        .menu-items li:nth-child(4) { animation-delay: 0.4s; }
+        .menu-items li:nth-child(5) { animation-delay: 0.5s; }
+        .menu-items li:nth-child(6) { animation-delay: 0.6s; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <ul class="menu-items ">
+                <li><a href="#home">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#food">Category</a></li>
+                <li><a href="#food-menu">Menu</a></li>
+                <li><a href="#testimonials">Testimonial</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="lasttt.html">Movie</a></li>
+                <li><a href="dnt.html">Donation</a></li>
+            </ul>
+            <div class="signin">
+                <a href="signin.html"><span>Sign In</span></a>
+            </div>
+           
+        </div>
+    </nav>
+    <div class="nav">
+        <ul class="menu-items1">
+            <li><a href="#home">NON-VEGPIZZAS</a></li>
+            <li><a href="#about">VEG PIZZAS</a></li>
+            <li><a href="#curry">Curry</a></li>
+            <li><a href="#veg food">Tortillas</a></li>
+            <li><a href="#biryani">Biryani</a></li>
+            <li><a href="#food">BEVERAGES</a></li>
+            <li><a href="#food-menu">DESSERTS</a></li>
+        </ul>
+    </div>
+    <section class="showcase-area" id="showcase">
+        <div class="showcase-container">
+            <h2 class="main-title" id="home">Restro Dine and Delight</h2>
+            <p>Discover a world of flavors with our mouth-watering Food!</p>
+            <a href="#food-menu" class="btn btn-primary">Menu</a>
+        </div>
+    </section>
+
+    <section id="food">
+        <h2>Types of food</h2>
+        <div class="food-container container">
+            <a href="#nonveg-pizza">
+                <div>
+                    <div class="img-container" id="keyframes">
+                        <img decoding="async" src="https://d3gy1em549lxx2.cloudfront.net/a2798454-4983-4cd0-8599-06fa655dad13.jpg" alt="error" />
+                        <div class="name">
+                            <h3>NON-VEG PIZZA</h3>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="#veg-pizza">
+                <div>
+                    <div class="img-container "id="keyframes">
+                        <img decoding="async" src="https://api.pizzahut.io/v1/content/en-in/in-1/images/pizza/veggie-supreme-cheese-maxx.9c36faf3796239a077a0a98ba489d7ce.1.jpg" alt="error" />
+                        <div class="name">
+                            <h3>VEG PIZZA</h3>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="#curry">
+                <div>
+                    <div class="img-container "id="keyframes">
+                        <img decoding="async" src="https://b.zmtcdn.com/data/dish_photos/218/747a9fea2ed239c95e15b5ff89341218.jpeg?fit=around|130:130&crop=130:130;*,*" alt="error" />
+                        <div class="name">
+                            <h3>Curry</h3>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="#veg food">
+                <div>
+                    <div class="img-container"id="keyframes">
+                        <img class="imgs" decoding="async" src="https://b.zmtcdn.com/data/o2_assets/52eb9796bb9bcf0eba64c643349e97211634401116.png" alt="error" />
+                        <div class="name">
+                            <h3>VEG Thalli</h3>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="#biryani">
+                <div>
+                    <div class="img-container" id="keyframes">
+                        <img class="imgs" decoding="async" src="https://b.zmtcdn.com/data/dish_photos/17e/68ebc60aec1794b2001a6d15039b717e.jpeg" alt="error"/>
+                        <div class="name">
+                           <h3>BIRYANI</h3> 
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="#beverages">
+                <div class="food-container container">
+                    <div class="img-container" id="keyframes">
+                        <img class="imgs" decoding="async" src="https://www.shutterstock.com/image-photo/cola-original-glass-straw-ice-600nw-538033819.jpg" alt="error" />
+                        <div class="name">
+                            <h3>BEVERAGES</h3>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="#desserts">
+                <div class="food-container container">
+                    <div class="img-container">
+                        <img decoding="async" src="https://t3.ftcdn.net/jpg/03/01/97/86/360_F_301978652_O0aPwap1JaEVaAhj3mIlbqNnJGmRyCzC.jpg" alt="error" />
+                        <div class="name">
+                            <h3>DESSERTS</h3>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </a>
+        </div>
+    </section>
+    <div class="cart" id="cart">
+        <h2>Cart</h2>
+        <div id="cart-items">
+            <!-- Cart items will be displayed here -->
+        </div>
+        <p>Total: ₹<span id="total">0</span></p>
+        <a href="payment.html" target="_blank"><button class="payment">Checkout</button></a>
+    </div>
+    <section id="food-menu">
+        <h1 class="food-menu-heading1">Food Menu</h1><br><br><br>
+        <section id="nonveg-pizza">
+            <h2 class="food-menu-heading2">NON-VEG PIZZAS</h2>
+            <div class="food-menu-container container">
+                <div class="food-menu-item">
+                    <div class="food-img">
+                        <img decoding="async" src="https://images.dominos.co.in/nextgen-catalog/media/prod/Dominos/menu/97011d39-db6b-4665-a486-73aeb504da23_new_chicken_dominator.jpg" alt="" />
+                    </div>
+                    <div class="food-description">
+                        <h2 class="food-titile">Chicken Dominator</h2>
+                        <p>
+                            Loaded with double pepper barbecue chicken, peri-peri chicken, chicken tikka & grilled chicken rashers.
+                        </p>
+                        <p class="food-price">Price: ₹ 599</p>
+                        <p class="quantity">Quantity:<input type="number" value="0" id="quantity1" style="size: 1px; width: 40px;height: 20px;" ></p>
+                        <button class="btn btn-primary addtocart" onclick="addItem(599,'Chicken Dominator','quantity1')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="food-menu-item">
+                    <div class="food-img">
+                        <img decoding="async" src="https://images.dominos.co.in/nextgen-catalog/media/prod/Dominos/menu/4d42a594-14be-48d2-ac4a-adcd0034a08f_FierySausagePaprikadef.jpeg" alt="error" />
+                    </div>
+                    <div class="food-description">
+                        <h2 class="food-titile">Fiery Sausage & Paprika</h2>
+                        <p>
+                            Spiciest non veg pizza with spicy & herby chicken sausage and red paprika toppings on a new spicy peri peri sauce base.
+                        </p>
+                        <p class="food-price">Price: ₹ 449</p>
+                        <p class="quantity">Quantity:<input type="number" value="0" id="quantity2" style="size: 1px; width: 40px;height: 20px;" ></p>
+                        <button class="btn btn-primary addtocart" onclick="addItem(449,'Fiery Sausage & Paprika','quantity2')">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="food-menu-item">
+                    <div class="food-img">
+                        <img decoding="async" src="https://images.dominos.co.in/nextgen-catalog/media/prod/Dominos/menu/b2fd890f-5889-4934-8586-1dbedb6fb856_new_chicken_golden_delight.jpg" alt="" />
+                    </div>
+                    <div class="food-description">
+                        <h2 class="food-titile">Chicken Golden Delight</h2>
+                        <p>
+                            Double pepper barbecue chicken, golden corn and extra cheese, true delight.
+                        </p>
+                        <p class="food-price">Price: ₹ 559</p>
+                        <p class="quantity">Quantity:<input type="number" value="0" id="quantity3" style="size: 1px; width: 40px;height: 20px;" ></p>
+                        <button class="btn btn-primary addtocart" onclick="addItem(559,'Chicken Golden Delight','quantity3')">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="food-menu-item">
+                    <div class="food-img">
+                        <img decoding="async" src="https://images.dominos.co.in/nextgen-catalog/media/prod/Dominos/menu/b0bdc2e7-8860-4cc7-8029-fe556493076b_new_chicken_fiesta.jpg" alt="" />
+                    </div>
+                    <div class="food-description">
+                        <h2 class="food-titile">Chicken Fiesta</h2>
+                        <p>
+                            Grilled chicken rashers, peri-peri chicken, onion & capsicum, a complete fiesta.
+                        </p>
+                        <p class="food-price">Price: ₹ 559</p>
+                        <p class="quantity">Quantity:<input type="number" value="0" id="quantity4" style="size: 1px; width: 40px;height: 20px;" ></p>
+                        <button class="btn btn-primary addtocart" onclick="addItem(559,'Chicken Fiesta','quantity4')">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="food-menu-item">
+                    <div class="food-img">
+                        <img decoding="async" src="https://images.dominos.co.in/nextgen-catalog/media/prod/Dominos/menu/0ecfd107-5e1b-48d8-8210-2c17ff4185dd_cheesepepperoni.png" alt="" />
+                    </div>
+                    <div class="food-description">
+                        <h2 class="food-titile">Chicken Pepperoni</h2>
+                        <p>
+                            A classic American taste! Relish the delectable flavor of Chicken Pepperoni, topped with extra cheese.
+                        </p>
+                        <p class="food-price">Price: ₹ 599</p>
+                        <p class="quantity">Quantity:<input type="number" value="0" id="quantity5" style="size: 1px; width: 40px;height: 20px;" ></p>
+                        <button class="btn btn-primary addtocart" onclick="addItem(599,'Chicken Pepperoni','quantity5')">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="food-menu-item">
+                    <div class="food-img">
+                        <img decoding="async" src="https://images.dominos.co.in/nextgen-catalog/media/prod/Dominos/menu/8c83ba68-879e-47aa-911c-4b523844a025_SpicedDoubleChicken.jpg" alt="error" />
+                    </div>
+                    <div class="food-description">
+                        <h2 class="food-titile">Spiced Double Chicken</h2>
+                        <p>
+                            Delightful combination of our spicy duo- Pepper Barbecue Chicken and Peri Peri Chicken for Chicken Lovers.
+                        </p>
+                        <p class="food-price">Price: ₹ 559</p>
+                        <p class="quantity">Quantity:<input type="number" value="0" id="quantity6" style="size: 1px; width: 40px;height: 20px;" ></p>
+                        <button class="btn btn-primary addtocart" onclick="addItem(559,'Spiced Double Chicken','quantity6')">Add to Cart</button>
+                    </div>
+                </div>
+            </section>
+            <section id="veg-pizza">
+                <h2 class="food-menu-heading2">VEG PIZZAS</h2>
+                <div class="food-menu-container container">
+                    <div class="food-menu-item">
+                        <div class="food-img">
+                            <img decoding="async" src="https://images.dominos.co.in/nextgen-catalog/media/prod/Dominos/menu/f65964c6-de96-475d-a5a9-3f3698d66ee7_new_peppy_paneer.jpg" alt="" />
+                        </div>
+                        <div class="food-description">
+                            <h2 class="food-titile">Peppy Paneer</h2>
+                            <p>
+                                Flavorful trio of juicy paneer, crisp capsicum with spicy red paprika.
+                            </p>
+                            <p class="food-price">Price: ₹ 459</p>
+                            <p class="quantity">Quantity:<input type="number" value="0" id="quantity9" style="size: 1px; width: 40px;height: 20px;" ></p>
+                            <button class="btn btn-primary addtocart" onclick="addItem(459,'Peppy Paneer','quantity9')">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="food-menu-item">
+                        <div class="food-img">
+                            <img decoding="async" src="https://images.dominos.co.in/nextgen-catalog/media/prod/Dominos/menu/10ddf620-ae20-477f-b4b2-9bce1ded021d_BlazingOnionPaprikacartmenu.jpeg" alt="error" />
+                        </div>
+                        <div class="food-description">
+                            <h2 class="food-titile">Blazing Onion & Paprika</h2>
+                            <p>
+                                Hot & spicy pizza with onion & red paprika toppings and a new spicy peri peri sauce on a Domino's...
+                            </p>
+                            <p class="food-price">Price: ₹ 329</p>
+                            <p class="quantity">Quantity:<input type="number" value="0" id="quantity10" style="size: 1px; width: 40px;height: 20px;" ></p>
+                            <button class="btn btn-primary addtocart" onclick="addItem(329,'Blazing Onion & Paprika','quantity10')">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="food-menu-item">
+                        <div class="food-img">
+                            <img decoding="async" src="https://images.dominos.co.in/nextgen-catalog/media/prod/Dominos/menu/17bc2a18-73f5-49d7-95eb-327091806cd6_IndianTandooriPaneer.jpg" alt="" />
+                        </div>
+                        <div class="food-description">
+                            <h2 class="food-titile">Indi Tandoori Paneer</h2>
+                            <p>
+                                It is hot. It is spicy. It is oh-so-Indian. Tandoori paneer with capsicum, red paprika & mint mayo.            
+                            </p>
+                            <p class="food-price">Price: ₹ 549</p>
+                            <p class="quantity">Quantity:<input type="number" value="0" id="quantity11" style="size: 1px; width: 40px;height: 20px;" ></p>
+                            <button class="btn btn-primary addtocart" onclick="addItem(549,'Indi Tandoori Paneer','quantity11')">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="food-menu-item">
+                        <div class="food-img">
+                            <img decoding="async" src="https://images.dominos.co.in/nextgen-catalog/media/prod/Dominos/menu/7f78135a-c94a-4586-b9c2-35e955924e57_The4CheesePizza.jpg" alt="" />
+                        </div>
+                        <div class="food-description">
+                            <h2 class="food-titile">Cheese Overload</h2>
+                            <p>
+                                Cheese Overloaded Pizza with a medley of Mozzarella, Cheddar & Ghost Pepper flavoured Cheese.            
+                            </p>
+                            <p class="food-price">Price: ₹ 639</p>
+                            <p class="quantity">Quantity:<input type="number" value="0" id="quantity12" style="size: 1px; width: 40px;height: 20px;" ></p>
+                            <button class="btn btn-primary addtocart" onclick="addItem(639,'Cheese Overload','quantity12')">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="food-menu-item">
+                        <div class="food-img">
+                            <img decoding="async" src="https://images.dominos.co.in/nextgen-catalog/media/prod/Dominos/menu/a94524cf-3acc-476a-a3a8-f0209ea9d4b2_new_cheese_n_corn.jpg" alt="" />
+                        </div>
+                        <div class="food-description">
+                            <h2 class="food-titile">Cheese n Corn</h2>
+                            <p>
+                                A delectable combination of sweet & juicy golden corn.            
+                            </p>
+                            <p class="food-price">Price: ₹ 379</p>
+                            <p class="quantity">Quantity:<input type="number" value="0" id="quantity13" style="size: 1px; width: 40px;height: 20px;" ></p>
+                            <button class="btn btn-primary addtocart" onclick="addItem(379,'Cheese n Corn','quantity13')">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="food-menu-item">
+                        <div class="food-img">
+                            <img decoding="async" src="https://images.dominos.co.in/nextgen-catalog/media/prod/Dominos/menu/09e3f02a-3c27-46b1-b358-68fdd8fbd978_new_mexican_green_wave.jpg" alt="error" />
+                        </div>
+                        <div class="food-description">
+                            <h2 class="food-titile">Mexican Green Wave</h2>
+                            <p>
+                                Mexican herbs sprinkled on onion, capsicum, tomato & jalapeno.            
+                            </p>
+                            <p class="food-price">Price: ₹ 459</p>
+                            <p class="quantity">Quantity:<input type="number" value="0" id="quantity14" style="size: 1px; width: 40px;height: 20px;" ></p>
+                            <button class="btn btn-primary addtocart" onclick="addItem(459,'Mexican Green Wave','quantity14')">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="food-menu-item">
+                        <div class="food-img">
+                            <img decoding="async" src="https://images.dominos.co.in/nextgen-catalog/media/prod/Dominos/menu/5f8ad75f-22d0-4dfb-80e1-852fe2f1caf9_new_veg_extravaganza.jpg" alt="error" />
+                        </div>
+                        <div class="food-description">
+                            <h2 class="food-titile">Veg Extravaganza</h2>
+                            <p>
+                                Black olives, capsicum, onion, grilled mushroom, corn, tomato, jalapeno & extra cheese.            
+                            </p>
+                            <p class="food-price">Price: ₹ 549</p>
+                            <p class="quantity">Quantity:<input type="number" value="0" id="quantity15" style="size: 1px; width: 40px;height: 20px;" ></p>
+                            <button class="btn btn-primary addtocart" onclick="addItem(549,'Veg Extravaganza','quantity15')">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="food-menu-item">
+                        <div class="food-img">
+                            <img decoding="async" src="https://images.dominos.co.in/nextgen-catalog/media/prod/Dominos/menu/79bc3609-690b-440e-b8be-74694b1f3215_new_margherita_2502.jpg" alt="" />
+                        </div>
+                        <div class="food-description">
+                            <h2 class="food-titile">Margherita</h2>
+                            <p>
+                                Classic delight with 100% real mozzarella cheese.           
+                            </p>
+                            <p class="food-price">Price: ₹ 239</p>
+                            <p class="quantity">Quantity:<input type="number" value="0" min="1" max="100" id="quantity16" style="size: 1px; width: 40px;height: 20px;" ></p>
+                            <button class="btn btn-primary addtocart" onclick="addItem(239,'Margherita','quantity16')">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-----------------------   paratha  -------------------------------------------->
+            <section id="veg food">
+                <h2 class="food-menu-heading2">Tortillas</h2>
+                <div class="food-menu-container container">
+                    <div class="food-menu-item">
+                        <div class="food-img">
+                            <img decoding="async" src="https://b.zmtcdn.com/data/dish_photos/7a7/54b55e601cee3ba4abb127d2dc4e37a7.jpg" alt=""/>
+                        </div>
+                        <div class="food-description">
+                            <h2 class="food-titile">Latcha Paratha</h2>
+                            <p>
+                                Rajasthan Paratha
+                            </p>
+                            <p class="food-price">Price :₹120 </p>
+                            <p class="quantity">Quantity<input type="number" value="0" min="1" max="100" id="quantity100" style="size: 1px; width: 40px;height: 20px;" ></p>
+                            <button class="btn btn-primary addtocart"onclick="addItem(120,'Rajasthan Paratha','quantity100')" > Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="food-menu-container ">
+                        <div class="food-menu-item">
+                            <div class="food-img">
+                                <img decoding="async" src="https://b.zmtcdn.com/data/dish_photos/89b/017a07c26630d322c30b5a2a5966689b.jpg?output-format=webp" alt=""/>
+                            </div>
+                            <div class="food-description">
+                                <h2 class="food-titile">Roti</h2>
+                                <p>
+                                    oil free roti
+                                </p>
+                                <p class="food-price">Price :₹80 </p>
+                                <p class="quantity">Quantity<input type="number" value="0" min="1" max="100" id="quantity101" style="size: 1px; width: 40px;height: 20px;" ></p>
+                                <button class="btn btn-primary addtocart"onclick="addItem(80,'Roti','quantity101')" > Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-menu-item">
+                        <div class="food-img">
+                            <img decoding="async" src="https://b.zmtcdn.com/data/dish_photos/b59/3c0489c990158fd4e913f028788b7b59.jpg" alt=""/>
+                        </div>
+                        <div class="food-description">
+                            <h2 class="food-titile">Pulkha</h2>
+                            <p>
+                                crunched
+                            </p>
+                            <p class="food-price">Price :₹60 </p>
+                            <p class="quantity">Quantity<input type="number" value="0" min="1" max="100" id="quantity103" style="size: 1px; width: 40px;height: 20px;" ></p>
+                            <button class="btn btn-primary addtocart"onclick="addItem(60,'Pulkha','quantity103')" > Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="food-menu-container ">
+                        <div class="food-menu-item">
+                            <div class="food-img">
+                                <img decoding="async" src="https://b.zmtcdn.com/data/dish_photos/960/50c52014e089b3152889a5a445845960.jpeg?fit=around|130:130&crop=130:130;*,*" alt=""/>
+                            </div>
+                            <div class="food-description">
+                                <h2 class="food-titile">Butter Pulkha</h2>
+                                <p>
+                                     buttery flavoured
+                                </p>
+                                <p class="food-price">Price :₹80 </p>
+                                <p class="quantity">Quantity<input type="number" value="0" min="1" max="100" id="quantity105" style="size: 1px; width: 40px;height: 20px;" ></p>
+                                <button class="btn btn-primary addtocart"onclick="addItem(80,'Butter Pulkha','quantity105')" > Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="biryani">
+                <h2 class="food-menu-heading2">Biryani</h2>
+                <div class="food-menu-container container">
+                    <div class="food-menu-item">
+                        <div class="food-img">
+                            <img decoding="async" src="https://b.zmtcdn.com/data/dish_photos/f8a/20042ceab67859cbc6a7de58e4cabf8a.jpg?fit=around|130:130&crop=130:130;*,*" alt="">
+                        </div>
+                        <div class="food-description">
+                            <h2 class="food-titile">Chicken BoneLess Biryani</h2>
+                            <p>
+                                BESTSELLER
+                            </p>
+                            <p class="food-price">Price: ₹ 360</p>
+                            <p class="quantity">Quantity:<input type="number" value="0" min="1" max="100" id="quantity250" style="size: 1px; width: 40px;height: 20px;" ></p>
+                            <button class="btn btn-primary addtocart" onclick="addItem(360,'Chicken BoneLess Biryani','quantity250')">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="food-menu-container " >
+                        <div class="food-menu-item">
+                            <div class="food-img">
+                                <img decoding="async" src="https://b.zmtcdn.com/data/dish_photos/ed3/c673400074af9cca7391a8e393496ed3.jpg?fit=around|130:130&crop=130:130;*,*" alt="">
+                            </div>
+                            <div class="food-description">
+                                <h2 class="food-titile">Chicken Biryani</h2>
+                            <p>
+                                BESTSELLER
+                            </p>
+                            <p class="food-price">Price: ₹ 320</p>
+                            <p class="quantity">Quantity:<input type="number" value="0" min="1" max="100" id="quantity251" style="size: 1px; width: 40px;height: 20px;" ></p>
+                            <button class="btn btn-primary addtocart" onclick="addItem(320,'Chicken Biryani','quantity251')">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="food-menu-container container">
+                    <div class="food-menu-item">
+                        <div class="food-img">
+                            <img decoding="async" src="https://b.zmtcdn.com/data/dish_photos/346/342940fad8502f5588d188d7918d3346.jpeg?fit=around|130:130&crop=130:130;*,*" alt="">
+                        </div>
+                        <div class="food-description">
+                            <h2 class="food-titile">Chicken Ghost Biryani</h2>
+                            <p>
+                                Hyderabadi Inspired Recipe, Spicy
+                            </p>
+                            <p class="food-price">Price: ₹ 585</p>
+                            <p class="quantity">Quantity:<input type="number" value="0" min="1" max="100" id="quantity250" style="size: 1px; width: 40px;height: 20px;" ></p>
+                            <button class="btn btn-primary addtocart" onclick="addItem(585,'Chicken Ghost Biryani','quantity25')">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="food-menu-container " >
+                        <div class="food-menu-item">
+                            <div class="food-img">
+                                <img decoding="async" src="https://b.zmtcdn.com/data/dish_photos/eb9/d1cd1e7be7732b0fed0c54139a87deb9.jpeg?fit=around|130:130&crop=130:130;*,*" alt="">
+                            </div>
+                            <div class="food-description">
+                                <h2 class="food-titile">Spl Chicken Biryani</h2>
+                            <p>
+                                BESTSELLER
+                            </p>
+                            <p class="food-price">Price: ₹ 400</p>
+                            <p class="quantity">Quantity:<input type="number" value="0" min="1" max="100" id="quantity255" style="size: 1px; width: 40px;height: 20px;" ></p>
+                            <button class="btn btn-primary addtocart" onclick="addItem(400,'SPL Chicken Biryani','quantity255')">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               <!--   ------------------------------Curries-------------------------------->
+            </section>
+            <section id="curry">
+                <h2 class="food-menu-heading2">Curries</h2>
+                <div class="food-menu-container container">
+                    <div class="food-menu-item">
+                        <div class="food-img">
+                            <img decoding="async" src="https://b.zmtcdn.com/data/dish_photos/c42/e04aa1d3257bb22b1984df761ceffc42.jpg" alt="" />
+                        </div>
+                        <div class="food-description">
+                            <h2 class="food-titile">Palak Panner</h2>
+                            <p>
+                                Healthy Hearty Palak panner</p>
+                            <p class="food-price">Price: ₹ 360</p>
+                            <p class="quantity">Quantity:<input type="number" value="0" min="1" max="100" id="quantity110" style="size: 1px; width: 40px;height: 20px;" ></p>
+                            <button class="btn btn-primary addtocart" onclick="addItem(360,'Palak Paneer','quantity110')">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="food-menu-item">
+                        <div class="food-img">
+                            <img decoding="async" src="https://b.zmtcdn.com/data/dish_photos/9dc/a93f71392c03b554024c8856293899dc.jpeg?fit=around|130:130&crop=130:130;*,*" alt="" />
+                        </div>
+                        <div class="food-description">
+                            <h2 class="food-titile">Dal Makhani</h2>
+                            <p>
+                                A rich and creamy dal 
+                            </p>
+                            <p class="food-price">Price: ₹ 159</p>
+                            <p class="quantity">Quantity:<input type="number" value="0" min="1" max="100"id="quantity111" style="size: 1px; width: 40px;height: 20px;" ></p>
+                            <button class="btn btn-primary addtocart" onclick="addItem(159,'Dal Makhani','quantity111')">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="food-menu-item">
+                        <div class="food-img">
+                            <img decoding="async" src="https://b.zmtcdn.com/data/dish_photos/34d/059907067eed3f778341ba67b971534d.jpeg?fit=around|130:130&crop=130:130;*,*" alt="" />
+                        </div>
+                        <div class="food-description">
+                            <h2 class="food-titile">Pindi Chole</h2>
+                            <p>
+                                gravy that is bursting with authentic spices.
+                            </p>
+                            <p class="food-price">Price: ₹ 170</p>
+                            <p class="quantity">Quantity:<input type="number" value="0" min="1" max="100" id="quantity112" style="size: 1px; width: 40px;height: 20px;" ></p>
+                            <button class="btn btn-primary addtocart" onclick="addItem(170,'Pindi Chole','quantity112')">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="food-menu-item">
+                        <div class="food-img">
+                            <img decoding="async" src="https://b.zmtcdn.com/data/dish_photos/514/eea423575b9830b13c39a0baf43d7514.jpeg?fit=around|130:130&crop=130:130;*,*" alt="" />
+                        </div>
+                        <div class="food-description">
+                            <h2 class="food-titile">Rajma Masala</h2>
+                            <p>
+                                Best Seller
+                            </p>
+                            <p class="food-price">Price: ₹ 170</p>
+                            <p class="quantity">Quantity:<input type="number" value="0" min="1" max="100" id="quantity113" style="size: 1px; width: 40px;height: 20px;" ></p>
+                            <button class="btn btn-primary addtocart" onclick="addItem(170,'Rajma Masala','quantity113')">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--------------------------------        beverages                                     ---------------->
+            <section id="beverages">
+                <h2 class="food-menu-heading2">BEVERAGES</h2>
+                <div class="food-menu-container container">
+                  
+                  <div class="food-menu-item">
+                    <div class="food-img">
+                      <img decoding="async" src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/md/D-K485.jpg?ver=41.8" alt="" />
+                    </div>
+                    <div class="food-description">
+                      <h2 class="food-titile">Pepsi 475ml</h2>
+                      <p>
+                        Sparkling and Refreshing Beverage.
+                      </p>          
+                      <p class="food-price">Price: ₹ 60</p>
+                      <p class="quantity">Quantity:<input type="number" value="0" id="quantity17" style="size: 1px; width: 40px;height: 20px;" ></p>
+                      <button class="btn btn-primary addtocart" onclick="addItem(60,'Pepsi 475ml','quantity17')" >Add to Cart</button>
+                    </div>
+                  </div>
+        
+                  <div class="food-menu-item">
+                    <div class="food-img">
+                      <img decoding="async"
+                        src="https://images.dominos.co.in/nextgen-catalog/media/prod/Dominos/menu/b1e4223a-5ab0-42bb-a6b9-6676e69b9b2d_PEPSIBLACKCANSearch.jpg"
+                        alt="error"
+                      />
+                    </div>
+                    <div class="food-description">
+                      <h2 class="food-titile">Pepsi Black Can 300ml</h2>
+                      <p>
+                        Maximum Taste Zero Calories.
+                      </p>
+                      <p class="food-price">Price: ₹ 60</p>
+                      <p class="quantity">Quantity:<input type="number" value="0" id="quantity18" style="size: 1px; width: 40px;height: 20px;" ></p>
+                      <button class="btn btn-primary addtocart" onclick="addItem(60,'Pepsi Black Can 300ml','quantity18')">Add to Cart</button>
+                    </div>
+                    
+                </div>
+                <div class="food-menu-item">
+                  <div class="food-img">
+                    <img decoding="async" src="https://www.contis.ph/cdn/shop/products/CokeinCan.jpg?v=1689558538" alt="" />
+                  </div>
+                  <div class="food-description">
+                    <h2 class="food-titile">Coca Cola, 750 ml</h2>
+                    <p>
+                      It’s Coca‑Cola, only spiced. Coca‑Cola Spiced transforms the familiar into the extraordinary.</p>
+                    <p class="food-price">Price: ₹ 90</p>
+                    <p class="quantity">Quantity:<input type="number" value="0" id="quantity19" style="size: 1px; width: 40px;height: 20px;" ></p>
+                    <button class="btn btn-primary addtocart" onclick="addItem(90,'Coca Cola, 750 ml','quantity19')">Add to Cart</button>
+                  </div>
+                </div>
+                <div class="food-menu-item">
+                  <div class="food-img">
+                    <img decoding="async" src="https://lh3.googleusercontent.com/DR8oBv0vJsICfxgOwQ4CObNgU2hOWq8Lj0sF6y9TO8FbFr1ge9guON_Xr2TTjbFrDTN4NEIlpK_bVEFha8HhCgaLGPTw8-LJo3kPLQ4=w512-rw" alt="" />
+                  </div>
+                  <div class="food-description">
+                    <h2 class="food-titile">Thumsup 330 ml</h2>
+                    <p>
+                      Sparkling & Refreshing Beverage.
+                     </p>
+                    <p class="food-price">Price: ₹ 67</p>
+                    <p class="quantity">Quantity:<input type="number" value="0" id="quantity20" style="size: 1px; width: 40px;height: 20px;" ></p>
+                    <button class="btn btn-primary addtocart" onclick="addItem(67,'Thumsup 330 ml','quantity20')">Add to Cart</button>
+                  </div>
+                </div>
+                <div class="food-menu-item">
+                  <div class="food-img">
+                    <img decoding="async" src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/md/D-K488.jpg?ver=41.8" alt="" />
+                  </div>
+                  <div class="food-description">
+                    <h2 class="food-titile">Mirinda Can 300 ml</h2>
+                    <p>
+                      Mirinda Can 300 ml.
+                     </p>
+                    <p class="food-price">Price: ₹ 57</p>
+                    <p class="quantity">Quantity:<input type="number" value="0" id="quantity21" style="size: 1px; width: 40px;height: 20px;" ></p>
+                    <button class="btn btn-primary addtocart" onclick="addItem(57,'Mirinda Can 300 ml','quantity21')">Add to Cart</button>
+                  </div>
+                </div>
+                <div class="food-menu-item">
+                  <div class="food-img">
+                    <img decoding="async" src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/md/D-K487.jpg?ver=41.8" alt="" />
+                  </div>
+                  <div class="food-description">
+                    <h2 class="food-titile">7UP Can 300 ml</h2>
+                    <p>
+                      7UP Can 300 ml.
+                     </p>
+                    <p class="food-price">Price: ₹ 57</p>
+                    <p class="quantity">Quantity:<input type="number" value="0" id="quantity22" style="size: 1px; width: 40px;height: 20px;" ></p>
+                    <button class="btn btn-primary addtocart" onclick="addItem(57,'7UP Can 300 ml','quantity22')">Add to Cart</button>
+                  </div>
+                </div>
+            </section>
+            <section id="desserts">
+              <h2 class="food-menu-heading2">DESSERTS</h2>
+              <div class="food-menu-container container">
+              <div class="food-menu-item">
+                <div class="food-img">
+                  <img decoding="async" src="https://images.dominos.co.in/nextgen-catalog/media/prod/Dominos/menu/209bc3ff-ea57-406b-bc4e-57256dcf7872_Butterscotch.png" alt="" />
+                </div>
+                <div class="food-description">
+                  <h2 class="food-titile">Butterscotch Mousse Cake</h2>
+                  <p>
+                    Sweet temptation! Butterscotch flavored mousse.
+                  </p>
+                  <p class="food-price">Price: ₹ 109</p>
+                  <p class="quantity">Quantity:<input type="number" value="0" id="quantity27" style="size: 1px; width: 40px;height: 20px;" ></p>
+                  <button class="btn btn-primary addtocart" onclick="addItem(109,'Butterscotch Mousse Cake','quantity27')">Add to Cart</button>
+                </div>
+              </div>
+              <div class="food-menu-item">
+                <div class="food-img">
+                  <img decoding="async" src="https://c38blhej2h.execute-api.ap-south-1.amazonaws.com/dev/png/456/RBLKFR-2803-1-2803.png" alt="" />
+                </div>
+                <div class="food-description">
+                  <h2 class="food-titile">Black Forest McFlurry </h2>
+                  <p>
+                    A sinful delight, soft serve topped with delicious, gooey hot chocolate fudge. Always grab an extra spoon.  
+                  </p>
+                  <p class="food-price">Price: ₹ 115</p>
+                  <p class="quantity">Quantity:<input type="number" value="0" id="quantity28" style="size: 1px; width: 40px;height: 20px;" ></p>
+                  <button class="btn btn-primary addtocart" onclick="addItem(115,'Black Forest McFlurry ','quantity28')">Add to Cart</button>
+                </div>
+              </div>
+              <div class="food-menu-item">
+                <div class="food-img">
+                  <img decoding="async" src="https://c38blhej2h.execute-api.ap-south-1.amazonaws.com/dev/png/700/BRWMSS-9-1-9.png" alt="" />
+                </div>
+                <div class="food-description">
+                  <h2 class="food-titile">Brownie Hot Fudge</h2>
+                  <p>
+                    Luscious chocolate brownie and hot-chocolate fudge to sweeten your day.    
+                  </p>
+                  <p class="food-price">Price: ₹ 138</p>
+                  <p class="quantity">Quantity:<input type="number" value="0" id="quantity29" style="size: 1px; width: 40px;height: 20px;" ></p>
+                  <button class="btn btn-primary addtocart" onclick="addItem(138,'Brownie Hot Fudge','quantity29')">Add to Cart</button>
+                </div>
+              </div>
+              <div class="food-menu-item">
+                <div class="food-img">
+                  <img decoding="async"
+                    src="https://images.dominos.co.in/nextgen-catalog/media/prod/Dominos/menu/df4eb645-30c0-469d-b937-895593451583_Choco_Lava.jpg"
+                    alt="error"
+                  />
+                </div>
+                <div class="food-description">
+                  <h2 class="food-titile">Choco Lava Cake</h2>
+                  <p>
+                    Chocolate lovers delight! Indulgent, gooey molten lava inside chocolate cake.
+                  </p>
+                  <p class="food-price">Price: ₹ 109</p>
+                  <p class="quantity">Quantity:<input type="number" value="0" id="quantity30" style="size: 1px; width: 40px;height: 20px;" ></p>
+                  <button class="btn btn-primary addtocart" onclick="addItem(109,'Choco Lava Cake','quantity30')">Add to Cart</button>
+                </div>
+              </div>
+              <div class="food-menu-item">
+                <div class="food-img">
+                  <img decoding="async" src="https://d3gy1em549lxx2.cloudfront.net/e6c2a28c-77e3-49cb-a294-ea6d2b6c4217.jpg" alt="" />
+                </div>
+                <div class="food-description">
+                  <h2 class="food-titile">Red-Velvet Charlotte</h2>
+                  <p>
+                    Red-Velvet Charlotte to sweeten your day.    
+                  </p>
+                  <p class="food-price">Price: ₹ 102</p>
+                  <p class="quantity">Quantity:<input type="number" value="0" id="quantity31" style="size: 1px; width: 40px;height: 20px;" ></p>
+                  <button class="btn btn-primary addtocart" onclick="addItem(102,'Red-Velvet Charlotte','quantity31')">Add to Cart</button>
+                </div>
+              </div>
+              <div class="food-menu-item">
+                <div class="food-img">
+                  <img decoding="async"
+                    src="https://d3gy1em549lxx2.cloudfront.net/c0d0a675-b732-48d6-a214-bb8633ab78a7.jpg"
+                    alt="error"
+                  />
+                </div>
+                <div class="food-description">
+                  <h2 class="food-titile">Black Forest Log (Eggless)</h2>
+                  <p>
+                    Black Forest Log without egg.
+                  </p>
+                  <p class="food-price">Price: ₹ 108</p>
+                  <p class="quantity">Quantity:<input type="number" value="0" id="quantity32" style="size: 1px; width: 40px;height: 20px;" ></p>
+                  <button class="btn btn-primary addtocart" onclick="addItem(108,'Black Forest Log (Eggless)','quantity32')">Add to Cart</button>
+                </div>
+              </div>
+            </section>
+          </section>
+                            <!-----------                        customer reviews    ---------------->
+                            <section id="testimonials">
+                              <h2 class="testimonial-title">What Our Customers Say</h2>
+                              <div class="testimonial-container container">
+                                <div class="testimonial-box">
+                                  <div class="customer-detail">
+                                    <div class="customer-photo">
+                                      <img decoding="async" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx-5aqoQPoKBh8cp8Jgve1RfTdMbb9ayXjIprYbnHH5g&s" alt="" />
+                                      <p class="customer-name">Mahesh Babu</p>
+                                    </div>
+                                  </div>
+                                  <p class="testimonial-text">
+                                    The taste was very good I really loved it. But the only disappointment is that there was only few pieces of paneer that I was not accepting. in the picture there were loaded panner but I received very few in curry.
+                                  </p>
+                                </div>
+                                <div class="testimonial-box">
+                                  <div class="customer-detail">
+                                    <div class="customer-photo">
+                                      <img decoding="async" src="https://assets.telegraphindia.com/telegraph/2023/Nov/1700872133_jayshahfinal.jpg" alt="" />
+                                      <p class="customer-name">Jai Sha</p>
+                                    </div>
+                                  </div>
+                                  <p class="testimonial-text">
+                                    I'm a huge fan of thin crust pizzas, and my favorite topping combination is pepperoni, mushrooms, and black olives. The crispy crust and savory toppings are irresistible.
+                                  </p>
+                                </div>
+                                <div class="testimonial-box">
+                                  <div class="customer-detail">
+                                    <div class="customer-photo">
+                                      <img decoding="async" src="https://img.indiaforums.com/person/480x360/0/2576-deepika-padukone.jpg?c=7rPD3F" alt="" />
+                                      <p class="customer-name">Deepika</p>
+                                    </div>
+                                  </div>
+                                  <p class="testimonial-text">
+                                    Pizza is the perfect canvas for creativity. Whether you prefer classic Italian flavors or bold international influences, there's a pizza out there for every palate.
+                                  </p>
+                                </div>
+                                <div class="testimonial-box">
+                                  <div class="customer-detail">
+                                    <div class="customer-photo">
+                                      <img decoding="async"
+                                        src="https://cdn.shopify.com/s/files/1/0080/4844/3455/files/LP_4614.jpg?v=1703582324&width=1080"
+                                        alt=""
+                                      />
+                                      <p class="customer-name">David Watson</p>
+                                    </div>
+                                  </div>
+                                  <p class="testimonial-text">
+                                    I'm always on the lookout for unique pizza flavors, and one of the most memorable ones I've tried was a truffle mushroom pizza topped with shaved parmesan. It was pure decadence!
+                                  </p>
+                        
+                                </div>
+                                <div class="testimonial-box">
+                                  <div class="customer-detail">
+                                    <div class="customer-photo">
+                                      <img decoding="async" src="https://static.toiimg.com/thumb/width-400,resizemode-4,msid-77572485/77572485.jpg" alt="" />
+                                      <p class="customer-name">MSD</p>
+                                    </div>
+                                  </div>
+                                  <p class="testimonial-text">
+                                    As a vegetarian, I appreciate the variety of options available for veggie pizzas. Spinach, roasted red peppers, and feta cheese make for a delicious and nutritious combination.
+                                  </p>
+                        
+                                </div>
+                              </div>
+                            </section>
+                            <section id="contact">
+                              <div class="contact-container container">
+                                <div class="contact-img">
+                                  <img decoding="async" src="https://plus.unsplash.com/premium_photo-1661772253149-48ec033cf4b7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGluZGlhbiUyMGZvb2QlMjBnaXJsc3xlbnwwfHwwfHx8MA%3D%3D" alt="" />
+                                </div>
+                        
+                                <div class="form-container">
+                                  <h2>Contact Us</h2>
+                                  <input type="text" placeholder="Your Name" />
+                                  <input type="email" placeholder="E-Mail" />
+                                  <textarea
+                                    cols="30"
+                                    rows="6"
+                                    placeholder="Type Your Message"
+                                  ></textarea>
+                                  <a href="#" class="btn btn-primary">Submit</a>
+                                </div>
+                              </div>
+                            </section>
+                        
+                            <footer id="footer">
+                              <h2>Restraunt © all rights reserved</h2>
+                            </footer>
+ </body>
+</html>                        
